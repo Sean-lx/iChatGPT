@@ -78,10 +78,10 @@ struct ChatRoomConfigView: View {
             .alert(isPresented: $showingAlert) {
                 ShowAlterView()
             }
-            .onChange(of: selectedModel) { _ in
+            .onChange(of: selectedModel) {
                 self.isDirty = true
             }
-            .onChange(of: [roomName, prompt, temperature, historyCount]) { _ in
+            .onChange(of: [roomName, prompt, temperature, historyCount]) {
                 self.isDirty = true
             }
             .gesture(

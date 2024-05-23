@@ -10,9 +10,9 @@ import Foundation
 import SwiftUI
 
 extension View {
-    
-    /// 当用户点击其他区域时隐藏软键盘
-    func hideKeyboard() {
-        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
+  
+  /// 当用户点击其他区域时隐藏软键盘
+  func hideKeyboard() {
+    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+  }
 }

@@ -9,16 +9,16 @@
 import Foundation
 
 enum InputViewAlert {
-    case createNewChatRoom, reloadLastQuestion, clearAllQuestion, shareContents
+  case createNewChatRoom, reloadLastQuestion, clearAllQuestion, shareContents
 }
 
 class AIChatInputModel: ObservableObject {
-    
-    @Published var showingAlert = false
-    @Published var activeAlert: InputViewAlert = .createNewChatRoom
-
-    @Published var isShowAllChatRoom: Bool = false
-    @Published var isConfigChatRoom: Bool = false
-    @Published var isScrollToChatRoomTop: Bool = false
-    @Published var searchText: String = ""
+  
+  @Published var showingAlert = false
+  @Published var activeAlert: InputViewAlert = .createNewChatRoom
+  
+  @Published var isShowAllChatRoom: Bool = false
+  @Published var isConfigChatRoom: Bool = false
+  @Published var isScrollToChatRoomTop: Bool = false
+  @Published var searchText: String = ""
 }

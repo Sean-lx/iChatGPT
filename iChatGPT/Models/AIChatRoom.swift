@@ -9,10 +9,10 @@
 import Foundation
 
 struct ChatRoom: Codable {
-    var roomID: String
-    var roomName: String?
-    var model: String?
-    var prompt: String?
-    var temperature: Double?
-    var historyCount: Int = 3
+  var roomID: String
+  var roomName: String?
+  var model: String?
+  var prompt: String?
+  var temperature: Double?
+  var historyCount: Int = 3
 }
